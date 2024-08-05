@@ -1,0 +1,67 @@
+/* gsap */
+.gsap-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.image-container{
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top: 15%;
+    right: -35%;
+}
+.gsap-logo{
+    width: 85vw;
+    height: 70vw;
+}
+
+.block{
+    height: 100vh;
+    padding: 0 10% 0 10%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.gsapTxt{
+    padding: 2rem;
+    max-width: 50%;
+}
+.block-logo{
+    display: none;
+}
+
+
+.gsapTxt h2{
+
+}
+
+.gsapTxt p{
+
+}
+
+/* mobile */
+@media (max-width: 768px){
+    .image-container{
+        display: none;
+    }
+
+    .block-logo{
+        display: block;
+        position: absolute;
+        top: 15%;
+        right: -55%;
+    }
+
+    
+.gsapTxt{
+    padding: 1rem;
+    max-width: 60%;
+}
+    
+    
+}
+

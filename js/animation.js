@@ -6,10 +6,11 @@ const hex = document.querySelectorAll(".hex-wrap.left");
 const hex2 = document.querySelectorAll(".hex-wrap.right");
 const btn = document.querySelector(".hero-text button")
 const logo = document.querySelector(".logo");
+const hero = document.querySelector(".hero");
 
 
 gsap.from(header, {y:-400, duration:0.8})
-gsap.from(".hero", {scale:0.1,duration:1.5});
+gsap.from(hero, {scale:0.1,duration:1.5});
 gsap.from(hex,{x: -400,stagger:0.3});
 gsap.from(hex2,{x: 400,stagger:0.3});
 
@@ -37,17 +38,6 @@ btn.addEventListener('mouseenter', () => {
 btn.addEventListener('mouseleave', () => {
   hasShaken = false;
 });
-
-
-
-
-
-
-
-
-
-
-
 
 // Smooth scroll initialization
 gsap.to(window, {

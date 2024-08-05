@@ -1,0 +1,210 @@
+/* Hero section styles */
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-text {
+    display: flex;
+    max-width: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.hero-text p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+@media (min-width: 1080px) {
+    .hero-text h1 {
+        max-width: 65%;
+    }
+    .hero-text p {
+        max-width: 75%;
+    }
+}
+
+.hero-text h1 span {
+    color: #1ae9ab;
+}
+
+.hero-text button {
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 20px;
+    
+}
+
+.hero-text button:hover {
+    background-color: #333;
+}
+
+/* Hexagon styles */
+.hex-wrap {
+    position: absolute;
+    
+}
+
+.hex-wrap.left {
+    z-index: 1;
+    left: 0;
+}
+
+.hex-wrap.right {
+    right: 0;
+}
+
+.hex-wrap:hover {
+    filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.5));
+}
+
+.hex {
+    height: 100%;
+    background-color: black;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.hex-inner {
+    width: 98%;
+    height: 98%;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hex-content {
+    text-align: center;
+    font-size: clamp(0.7rem, 1.2vw, 1rem);
+    width: 20ch;
+    text-wrap: wrap;
+}
+
+.left-hex {
+    position: relative;
+    display: flex;
+}
+
+/* Specific hexagon styles */
+.hex-wrap.one, .hex-wrap.six {
+    height: 13vw;
+    width: 13vw;
+}
+
+.hex-wrap.two, .hex-wrap.three, .hex-wrap.four, .hex-wrap.five,
+.hex-wrap.seven, .hex-wrap.eight, .hex-wrap.nine, .hex-wrap.ten {
+    height: 10vw;
+    width: 10vw;
+}
+
+.hex-wrap.one { bottom: 24vw; left: -1vw; }
+.hex-wrap.two { bottom: 16vw; left: -5vw; }
+.hex-wrap.three { bottom: 16vw; left: 5.5vw; }
+.hex-wrap.four { bottom: 8.2vw; left: 11vw; }
+.hex-wrap.five { bottom: 8vw; left: 0.5vw; }
+.hex-wrap.six { bottom: 24vw; right: -1vw; }
+.hex-wrap.seven { bottom: 16vw; right: 5.5vw; }
+.hex-wrap.eight { bottom: 16vw; right: -5vw; }
+.hex-wrap.nine { bottom: 8.2vw; right: 11vw; }
+.hex-wrap.ten { bottom: 8vw; right: 0.5vw; }
+
+/* Media queries  */
+@media (max-width: 650px) {
+    .hex-wrap.one, .hex-wrap.six {
+        height: 23vw;
+        width: 23vw;
+    }
+    .hex-wrap.one{
+        left: -2.2vw;
+    }
+
+    .hex-wrap.six{
+        right: -2.2vw;
+    }
+
+    .hex-wrap.two, .hex-wrap.three, .hex-wrap.four, .hex-wrap.five,
+    .hex-wrap.seven, .hex-wrap.eight, .hex-wrap.nine, .hex-wrap.ten {
+        height: 20vw;
+        width: 20vw;
+    }
+
+    .hex-wrap.one, .hex-wrap.six { bottom: 33.5vw; }
+    .hex-wrap.two, .hex-wrap.three, .hex-wrap.seven, .hex-wrap.eight { bottom: 18vw; }
+    .hex-wrap.two{
+        left: -11vw;
+    }
+    .hex-wrap.three{
+        left: 10vw;
+    }
+    .hex-wrap.eight{
+        right: -11vw;
+    }
+    .hex-wrap.seven{
+        right: 10vw;
+    }
+    .hex-wrap.four, .hex-wrap.nine { bottom: 2.2vw; }
+    .hex-wrap.five, .hex-wrap.ten { bottom: 2vw; }
+    .hex-wrap.five{
+        left: -0.8vw;
+    }
+    .hex-wrap.four{
+        left: 20vw;
+    }
+    .hex-wrap.ten{
+        right: -0.8vw;
+    }
+    .hex-wrap.nine{
+        right: 20vw;
+    }
+}
+
+@media (min-width: 1840px) {
+    .hex-wrap.one, .hex-wrap.six {
+        height: 187.2px;
+        width: 187.2px;
+    }
+
+    .hex-wrap.two, .hex-wrap.three, .hex-wrap.four, .hex-wrap.five,
+    .hex-wrap.seven, .hex-wrap.eight, .hex-wrap.nine, .hex-wrap.ten {
+        height: 144px;
+        width: 144px;
+    }
+
+    .hex-wrap.one, .hex-wrap.six { bottom: 345.6px; }
+    .hex-wrap.two, .hex-wrap.three, .hex-wrap.seven, .hex-wrap.eight { bottom: 230.4px; }
+    .hex-wrap.four, .hex-wrap.nine { bottom: 118.08px; }
+    .hex-wrap.five, .hex-wrap.ten { bottom: 115.2px; }
+}
+
+.hero-wrap .active {
+    background-color: #1ae9ab;
+    color: #1ae9ab;
+}

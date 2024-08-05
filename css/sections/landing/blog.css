@@ -1,0 +1,82 @@
+.blog-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    justify-content: flex-start;
+    font-family: "Space Grotesk", sans-serif;
+  }
+  
+  .blog-section h2 {
+    text-align: center;
+    margin: 3.5rem 0 1.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+  
+  .blog-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  
+  .blog-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .blog-card {
+    background-color: #fff;
+    flex: 0 0 354px;
+    margin-right: 1vmax;
+    border-radius: 2rem;
+    border: 2px solid black;
+    border-bottom: 15px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 452px;
+    position: relative;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .blog-card:hover {
+    background-color: #1ae9ab;
+  }
+  
+  .blog-image {
+    background-color: #ccc;
+    height: 155px;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .blog-card h3 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+  }
+  
+  .blog-card p {
+    color: black;
+    font-size: 16px;
+    margin: 0 0 20px 0;
+  }
+  
+  .blog-card button {
+    background-color: #111;
+    position: absolute;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 32px;
+    cursor: pointer;
+    bottom: 30px;
+  }
+  

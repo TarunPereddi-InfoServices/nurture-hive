@@ -1,0 +1,140 @@
+/*contact us*/
+.contact-section {
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+  text-align: center;
+  background-color: white;
+}
+
+.contact {
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5% 5% 8% 5%;
+    min-height: 100%;
+    flex: 0 0 80%;
+    border-radius: 40px;
+
+}
+
+@media (max-width: 956px){
+  .contact {
+    background-size: cover;
+    flex: 0 0 90%;
+    
+}
+.contact-form .left-column .form-group label{
+  display: none;
+}
+.contact-form .right-column .form-group label{
+  display: none;
+}
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+
+.contact-form .left-column .form-group label{
+  font-size: 1.2rem;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-column {
+  grid-row: span 2; /* This makes the right column span two rows */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 200px;
+}
+
+.contact-form button {
+  width: 30%;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  grid-column: span 2;
+  justify-self: center; /* This centers the button horizontally */
+  margin-top: 20px; /* Add some space above the button */
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .right-column {
+    grid-row: auto;
+  }
+
+  .contact-form button {
+    grid-column: 1;
+    width: 100%;
+  }
+}
+
+.contact-form button:hover {
+  background-color: #00d387;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+}

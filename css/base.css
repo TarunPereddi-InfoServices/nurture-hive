@@ -1,0 +1,26 @@
+/* import */
+  /* default */
+  @import url(./styles.css);
+
+  /* utility */
+  @import url(./utility/header.css);
+  @import url(./utility/footer.css);
+  @import url(./utility/button.css);
+  
+  /* section */
+  @import url(./sections/landing/contact.css);
+  @import url(./sections/landing/blog.css);
+  @import url(./sections/landing/testmonial.css);
+  @import url(./sections/landing/hero.css);
+  @import url(./sections/landing/gsap.css);
+
+  /* pages */
+  @import url(./pages/blogpage.css);
+
+
+/* Base reset and box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

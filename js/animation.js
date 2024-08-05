@@ -13,6 +13,17 @@ gsap.from(".hero", {scale:0.1,duration:1.5});
 gsap.from(hex,{x: -400,stagger:0.3});
 gsap.from(hex2,{x: 400,stagger:0.3});
 
+//btn shake
+function shakeButton(button) {
+  gsap.to(button, {
+    x: 5,
+    duration: 0.1,
+    repeat: 5,
+    yoyo: true,
+    ease: "power1.inOut"
+  });
+}
+
 let hasShaken = false;
 
 // Add event listener for hover
@@ -26,6 +37,16 @@ btn.addEventListener('mouseenter', () => {
 btn.addEventListener('mouseleave', () => {
   hasShaken = false;
 });
+
+
+
+
+
+
+
+
+
+
 
 
 // Smooth scroll initialization

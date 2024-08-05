@@ -22,7 +22,7 @@
       <div class="header-container">
         <div class="header">
           <div class="headGrp">
-            <a href="index.html">
+            <a href="#">
               <div class="logo-container">
                 <svg
                   width="211"
@@ -112,10 +112,10 @@
         </div>
         <nav class="nav-menu" id="navMenu">
           <a onclick="scrollToSection('about')">About Us</a>
-          <a href="#service">Services</a>
-          <a href="#portofolio">Portfolio</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#blog">Blogs</a>
+          <a onclick="scrollToSection('service')">Services</a>
+          <a onclick="scrollToSection('portofolio')">Portfolio</a>
+          <a onclick="scrollToSection('testimonials')">Testimonials</a>
+          <a onclick="scrollToSection('blog')">Blogs</a>
         </nav>
       </div>
     </header>
@@ -205,7 +205,10 @@
     </div>
 
     <!-- new gsap here -->
+    
+    
 
+      <!-- mobile version -->
     
     <!-- testimonials -->
     <main id="testimonials">
@@ -347,27 +350,29 @@
     <footer>
       <div class="footer-container">
         <div class="footer-top">
+          <a href="#">
           <div class="footer-logo">
             <h2>Nurture <span>Hive</span></h2>
-          </div>
+          </div></a> 
           <ul class="footer-nav">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a onclick="scrollToSection('about')">About us</a></li>
+            <li><a onclick="scrollToSection('service')">Services</a></li>
+            <li><a onclick="scrollToSection('portofolio')">Portfolio</a></li>
+            <li><a onclick="scrollToSection('testimonials')">Testimonials</a></li>
+            <li><a onclick="scrollToSection('blog')">Blogs</a></li>
           </ul>
           <div class="footer-social">
             <a href="https://www.linkedin.com/"
               ><img src="assets/img/icons/linkedin-icon.png" alt="LinkedIn"
             /></a>
-            <a href="https://x.com/"
+            <a href="https://www.x.com/"
               ><img src="assets/img/icons/x.png" alt="X"
             /></a>
           </div>
         </div>
         <div class="footer-bottom">
           <div class="footer-contact">
-            <a href="#contact"><button>Contact us:</button></a>
+            <a onclick="scrollToSection('contact')"><button>Contact us:</button></a>
             <div class="info">
               <p>Email: info@nurturehive.com</p>
               <p>Phone: +91-6301206787</p>

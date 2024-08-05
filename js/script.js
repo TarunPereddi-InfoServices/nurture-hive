@@ -17,6 +17,7 @@ function toggleMenu() {
     }
 }
 
+//services toggle
 document.addEventListener('DOMContentLoaded', function () {
 
     // Content toggle functionality
@@ -84,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
+//testimonials 
 document.addEventListener('DOMContentLoaded', function () {
     const testimonialsWrapper = document.querySelector('.testimonials-wrapper');
     const testimonials = document.querySelectorAll('.testimonial');
@@ -196,6 +197,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// scrolling
 function scrollToSection(sectionId) {
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
 }

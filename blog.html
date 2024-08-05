@@ -204,30 +204,33 @@
     </div>
   </div>
 
+  <!-- footer -->
   <footer>
     <div class="footer-container">
       <div class="footer-top">
+        <a href="#">
         <div class="footer-logo">
           <h2>Nurture <span>Hive</span></h2>
-        </div>
+        </div></a> 
         <ul class="footer-nav">
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a onclick="scrollToSection('about')">About us</a></li>
+          <li><a onclick="scrollToSection('service')">Services</a></li>
+          <li><a onclick="scrollToSection('portofolio')">Portfolio</a></li>
+          <li><a onclick="scrollToSection('testimonials')">Testimonials</a></li>
+          <li><a onclick="scrollToSection('blog')">Blogs</a></li>
         </ul>
         <div class="footer-social">
           <a href="https://www.linkedin.com/"
             ><img src="assets/img/icons/linkedin-icon.png" alt="LinkedIn"
           /></a>
-          <a href="https://x.com/"
+          <a href="https://www.x.com/"
             ><img src="assets/img/icons/x.png" alt="X"
           /></a>
         </div>
       </div>
       <div class="footer-bottom">
         <div class="footer-contact">
-          <a href="#contact"><button>Contact us:</button></a>
+          <a onclick="scrollToSection('contact')"><button>Contact us:</button></a>
           <div class="info">
             <p>Email: info@nurturehive.com</p>
             <p>Phone: +91-6301206787</p>
@@ -241,6 +244,7 @@
       </div>
     </div>
   </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
